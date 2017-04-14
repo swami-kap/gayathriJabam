@@ -275,7 +275,7 @@ function resetForm(){
  $('.eduLevelDiv').addClass('displayNone');
  $('.eduSchoolDetailsDiv').addClass('displayNone');
  $('.eduAddDetailsDiv').addClass('displayNone');
- // $('.selectpicker').selectpicker('render');
+  $('.selectpicker').selectpicker('render');
 }
  function showAdditonalEduDetails(event){
   $('.eduAddDetailsDiv').removeClass('has-error');
@@ -964,113 +964,115 @@ option{
     <div class="form-group">
      <label class="control-label col-sm-3 " > Gotra (Thrayarisheya Pravaranvitha): <sub>*</sub></label>
       <div class="col-sm-4"> 
-       <select class="form-control  dropdown"   onchange ="removeError(event)">
+       <select class="form-control selectpicker dropdown" dropupAuto=false  id="gotra" data-live-search="true"  onchange ="removeError(event)">
       <option value="">Select a Gotra</option>
       
 <optgroup label="Brugu (Briku)">
-<option value=" Jamadagni Bhargava- Syavana- Aabnavaana - Thrayarisheya- pravaranvitha"> Jamadagni Bhargava- Syavana- Aabnavaana - Thrayarisheya- pravaranvitha</option>
-- <option value=" Jaabaali Bhargava- Vaithahavya- Raivasa - Thrayarisheya- pravaranvitha"> Jaabaali Bhargava- Vaithahavya- Raivasa - Thrayarisheya- pravaranvitha</option>
-- <option value=" Jaamadagnya Bhargava- Aurva- jamadagnya - Thrayarisheya- pravaranvitha"> Jaamadagnya Bhargava- Aurva- jamadagnya - Thrayarisheya- pravaranvitha</option>
-- <option value=" Jaimini Bhargava- Vaithahavya- Raivasa - Thrayarisheya- pravaranvitha"> Jaimini Bhargava- Vaithahavya- Raivasa - Thrayarisheya- pravaranvitha</option>
-- <option value=" Bhaulathsya Bhargava- Aurva- jamadagnya - Thrayarisheya- pravaranvitha"> Bhaulathsya Bhargava- Aurva- jamadagnya - Thrayarisheya- pravaranvitha</option>
-- <option value=" Maandookeya Bhargava- Aurva- jamadagnya - Thrayarisheya- pravaranvitha"> Maandookeya Bhargava- Aurva- jamadagnya - Thrayarisheya- pravaranvitha</option>
-- <option value=" Maunabhargava Bhargava- Vaithahavya- Saavethasa - Thrayarisheya- pravaranvitha"> Maunabhargava Bhargava- Vaithahavya- Saavethasa - Thrayarisheya- pravaranvitha</option>
-- <option value=" Vathoola Bhargava- Vaithahavya- Saavethasa - Thrayarisheya- pravaranvitha"> Vathoola Bhargava- Vaithahavya- Saavethasa - Thrayarisheya- pravaranvitha</option>
-- <option value=" Srivathsa Bhargava- Syavana- Aapnavana- Aurva- Jamadagya - Pancharisheya- pravaranvitha"> Srivathsa Bhargava- Syavana- Aapnavana- Aurva- Jamadagya - Pancharisheya- pravaranvitha</option>
-- <option value=" Garthsamatha Bhargava- Garthsamatha - Dvayarisheya- pravaranvitha"> Garthsamatha Bhargava- Garthsamatha - Dvayarisheya- pravaranvitha</option>
-- <option value=" Kanaka Bhargava- Garthsamatha - Dvayarisheya- pravaranvitha"> Kanaka Bhargava- Garthsamatha - Dvayarisheya- pravaranvitha</option>
-- <option value=" Yagnjapathi Bhargava- Garthsamatha - Dvayarisheya- pravaranvitha"> Yagnjapathi Bhargava- Garthsamatha - Dvayarisheya- pravaranvitha</option>
-- <option value=" Avada Bhargava- Aurva- Jamadagnya - Thrayarsheya- pravaranvitha"> Avada Bhargava- Aurva- Jamadagnya - Thrayarsheya- pravaranvitha</option>
-- <option value=" AartishENa Bhargava- AarttisheNa- AnUpa - Thrayarsheya pravaranvitha"> AartishENa Bhargava- AarttisheNa- AnUpa - Thrayarsheya pravaranvitha</option>
-- <option value=" Aaswalaayana Bhargava- Vaadhyaksha- Daivadaasa - Thrayarsheya- pravaranvitha"> Aaswalaayana Bhargava- Vaadhyaksha- Daivadaasa - Thrayarsheya- pravaranvitha</option>
-- <option value=" Kasyapi Bhargava- Vaidahvya- Saavethasa - Thrayarsheya- pravaranvitha"> Kasyapi Bhargava- Vaidahvya- Saavethasa - Thrayarsheya- pravaranvitha</option>
-- <option value=" Kaathyaayana Bhargava- AartishENa- AnUpa - Thrayarsheya- pravaranvitha"> Kaathyaayana Bhargava- AartishENa- AnUpa - Thrayarsheya- pravaranvitha</option>
-- <option value=" Kaargya Bhargava- Vaithahavya- Revasa - Thrayarsheya- pravaranvitha"> Kaargya Bhargava- Vaithahavya- Revasa - Thrayarsheya- pravaranvitha</option>
-- <option value=" Kruthsamatha Bhargava- Saunahothra- Gaarthsamatha - Thrayarsheya- pravaranvitha"> Kruthsamatha Bhargava- Saunahothra- Gaarthsamatha - Thrayarsheya- pravaranvitha</option>
-- <option value=" Nairruthi Bhargava- AartishENa- AnUpa - Thrayarsheya- pravaranvitha"> Nairruthi Bhargava- AartishENa- AnUpa - Thrayarsheya- pravaranvitha</option>
+<option value = Jamadagni Bhargava- Syavana- Aabnavaana - Thrayarisheya- pravaranvitha>Jamadagni</option>
+ <option value = Jaabaali Bhargava- Vaithahavya- Raivasa - Thrayarisheya- pravaranvitha>Jaabaali</option>
+ <option value = Jaamadagnya Bhargava- Aurva- jamadagnya - Thrayarisheya- pravaranvitha>Jaamadagnya</option>
+ <option value = Jaimini Bhargava- Vaithahavya- Raivasa - Thrayarisheya- pravaranvitha>Jaimini</option>
+ <option value = Bhaulathsya Bhargava- Aurva- jamadagnya - Thrayarisheya- pravaranvitha>Bhaulathsya</option>
+ <option value = Maandookeya Bhargava- Aurva- jamadagnya - Thrayarisheya- pravaranvitha>Maandookeya</option>
+ <option value = Maunabhargava Bhargava- Vaithahavya- Saavethasa - Thrayarisheya- pravaranvitha>Maunabhargava</option>
+ <option value = Vathoola Bhargava- Vaithahavya- Saavethasa - Thrayarisheya- pravaranvitha>Vathoola</option>
+ <option value = Srivathsa Bhargava- Syavana- Aapnavana- Aurva- Jamadagya - Pancharisheya- pravaranvitha>Srivathsa</option>
+ <option value = Garthsamatha Bhargava- Garthsamatha - Dvayarisheya- pravaranvitha>Garthsamatha</option>
+ <option value = Kanaka Bhargava- Garthsamatha - Dvayarisheya- pravaranvitha>Kanaka</option>
+ <option value = Yagnjapathi Bhargava- Garthsamatha - Dvayarisheya- pravaranvitha>Yagnjapathi</option>
+ <option value = Avada Bhargava- Aurva- Jamadagnya - Thrayarsheya- pravaranvitha>Avada</option>
+ <option value = AartishENa Bhargava- AarttisheNa- AnUpa - Thrayarsheya pravaranvitha>AartishENa</option>
+ <option value = Aaswalaayana Bhargava- Vaadhyaksha- Daivadaasa - Thrayarsheya- pravaranvitha>Aaswalaayana</option>
+ <option value = Kasyapi Bhargava- Vaidahvya- Saavethasa - Thrayarsheya- pravaranvitha>Kasyapi</option>
+ <option value = Kaathyaayana Bhargava- AartishENa- AnUpa - Thrayarsheya- pravaranvitha>Kaathyaayana</option>
+ <option value = Kaargya Bhargava- Vaithahavya- Revasa - Thrayarsheya- pravaranvitha>Kaargya</option>
+ <option value = Kruthsamatha Bhargava- Saunahothra- Gaarthsamatha - Thrayarsheya- pravaranvitha>Kruthsamatha</option>
+ <option value = Nairruthi Bhargava- AartishENa- AnUpa - Thrayarsheya- pravaranvitha>Nairruthi</option>
 </optgroup>
+
+
 <optgroup label="Aangirasa">
-- <option value="Uthasatha (Uthathya) Aangirasa- Audathya- Gauthama - Thrayarsheya- pravaranvitha">Uthasatha (Uthathya) Aangirasa- Audathya- Gauthama - Thrayarsheya- pravaranvitha</option>
-- <option value=" Kamyaangirasa Aangirasa- Aamahaavya- Aurushaaya - Thrayarsheya- pravaranvitha"> Kamyaangirasa Aangirasa- Aamahaavya- Aurushaaya - Thrayarsheya- pravaranvitha</option>
-- <option value=" GaargEya Aangirasa- Gaargya- Chaithya - Thrayarsheya- pravaranvitha"> GaargEya Aangirasa- Gaargya- Chaithya - Thrayarsheya- pravaranvitha</option>
-- <option value=" GaargEya Aangirasa- Bhaarhaspathya- Bharatheevaja- Sainya- Gargya - Pancharsheya pravaranvitha"> GaargEya Aangirasa- Bhaarhaspathya- Bharatheevaja- Sainya- Gargya - Pancharsheya pravaranvitha</option>
-- <option value=" Gauthama Aangirasa- Aayarsaya- Gauthama - Thrayarsheya- pravaranvitha"> Gauthama Aangirasa- Aayarsaya- Gauthama - Thrayarsheya- pravaranvitha</option>
-- <option value=" Paurukuthsa Aangirasa- Paurukuthsa- Thraasathasya - Thrayarsheya- pravaranvitha"> Paurukuthsa Aangirasa- Paurukuthsa- Thraasathasya - Thrayarsheya- pravaranvitha</option>
-- <option value=" PaatharaayaNa Aangirasa- Paurukuthsa- Thraasathasya - Thrayarsheya- pravaranvitha"> PaatharaayaNa Aangirasa- Paurukuthsa- Thraasathasya - Thrayarsheya- pravaranvitha</option>
-- <option value=" Mauthgalya Aangirasa- Ambarisha- Mauthgalya - Thrayarsheya- pravaranvitha"> Mauthgalya Aangirasa- Ambarisha- Mauthgalya - Thrayarsheya- pravaranvitha</option>
-- <option value=" Bharatwaja Aangirasa- Bhaarhaspathya- Bharatwaja - Thrayarsheya- pravaranvitha"> Bharatwaja Aangirasa- Bhaarhaspathya- Bharatwaja - Thrayarsheya- pravaranvitha</option>
-- <option value=" Mauthgalya Aangirasa- Bhargyasva- Mauthgalya - Thrayarsheya- pravaranvitha"> Mauthgalya Aangirasa- Bhargyasva- Mauthgalya - Thrayarsheya- pravaranvitha</option>
-- <option value=" Ratheethara Aangirasa- Vairoopa- Raatheethara - Thrayarsheya- pravaranvitha"> Ratheethara Aangirasa- Vairoopa- Raatheethara - Thrayarsheya- pravaranvitha</option>
-- <option value=" Vishnuvruththa Aangirasa- Pauruguthsa- Thraasathasya - Thrayarsheya- pravaranvitha"> Vishnuvruththa Aangirasa- Pauruguthsa- Thraasathasya - Thrayarsheya- pravaranvitha</option>
-- <option value=" ShatamarshNa Aangirasa- Thraasathasya- Pauruguthsa - Thrayarsheya- pravaranvitha"> ShatamarshNa Aangirasa- Thraasathasya- Pauruguthsa - Thrayarsheya- pravaranvitha</option>
-- <option value=" Sankruthi Saathya- Saankruthya- Gauriveetha - Thrayarsheya- pravaranvitha"> Sankruthi Saathya- Saankruthya- Gauriveetha - Thrayarsheya- pravaranvitha</option>
-- <option value=" Sankruthi Aangirasa- Saaskruthya- Gauriveetha - Thrayarsheya- pravaranvitha"> Sankruthi Aangirasa- Saaskruthya- Gauriveetha - Thrayarsheya- pravaranvitha</option>
-- <option value=" Haritha Aangirasa- Ambarisha- Yauvanaachva - Thrayarsheya- pravaranvitha"> Haritha Aangirasa- Ambarisha- Yauvanaachva - Thrayarsheya- pravaranvitha</option>
-- <option value=" Aabasthamba Aangirasa- Bharhaspathya- Bharatwaja - Thrayarsheya- pravaranvitha"> Aabasthamba Aangirasa- Bharhaspathya- Bharatwaja - Thrayarsheya- pravaranvitha</option>
-- <option value=" Aayaasya Aangirassa- Aayaasya- Gauthama - Thrayarsheya- pravaranvitha"> Aayaasya Aangirassa- Aayaasya- Gauthama - Thrayarsheya- pravaranvitha</option>
-- <option value=" KaNva Aangirasa- Ajameeta- KaaNva - Thrayarsheya- pravaranvitha"> KaNva Aangirasa- Ajameeta- KaaNva - Thrayarsheya- pravaranvitha</option>
-- <option value=" KaNva Aangirasa- Aamaheeyava- Aurukshyasa - Thrayarsheya- pravaranvitha"> KaNva Aangirasa- Aamaheeyava- Aurukshyasa - Thrayarsheya- pravaranvitha</option>
-- <option value=" Kabila Aangirasa- Aamaheeyava- Aurukshyasa - Thrayarsheya- pravaranvitha"> Kabila Aangirasa- Aamaheeyava- Aurukshyasa - Thrayarsheya- pravaranvitha</option>
-- <option value=" Garga Aangirasa- Chainya- Gargaya (Garka) - Thrayarsheya- pravaranvitha"> Garga Aangirasa- Chainya- Gargaya (Garka) - Thrayarsheya- pravaranvitha</option>
-- <option value=" Kuthsa Aangirasa- Ambareesha- Yauvanaachva - Thrayarsheya- pravaranvitha"> Kuthsa Aangirasa- Ambareesha- Yauvanaachva - Thrayarsheya- pravaranvitha</option>
-- <option value=" Kuthsa Aangirasa- Maandathra- Kauthsa - Thrayarsheya- pravaranvitha"> Kuthsa Aangirasa- Maandathra- Kauthsa - Thrayarsheya- pravaranvitha</option>
-- <option value=" Kaundinya Aangirasa- Bharhaspathya- Bharatwaja - Thrayarsheya- pravaranvitha"> Kaundinya Aangirasa- Bharhaspathya- Bharatwaja - Thrayarsheya- pravaranvitha</option>
-- <option value=" Paurukuthsa Aangirasa- Paurukuthsa- Aasathasya - Thrayarsheya- pravaranvitha"> Paurukuthsa Aangirasa- Paurukuthsa- Aasathasya - Thrayarsheya- pravaranvitha</option>
-- <option value=" Lohitha Aangirasa- Vaichvamitra- Lohitha - Thrayarsheya- pravaranvitha"> Lohitha Aangirasa- Vaichvamitra- Lohitha - Thrayarsheya- pravaranvitha</option>
+  <option value =Uthasatha (Uthathya) Aangirasa- Audathya- Gauthama - Thrayarsheya- pravaranvitha>(Uthathya)</option>
+ <option value = Kamyaangirasa Aangirasa- Aamahaavya- Aurushaaya - Thrayarsheya- pravaranvitha>Kamyaangirasa</option>
+ <option value = GaargEya Aangirasa- Gaargya- Chaithya - Thrayarsheya- pravaranvitha>GaargEya</option>
+ <option value = GaargEya Aangirasa- Bhaarhaspathya- Bharatheevaja- Sainya- Gargya - Pancharsheya pravaranvitha>GaargEya</option>
+ <option value = Gauthama Aangirasa- Aayarsaya- Gauthama - Thrayarsheya- pravaranvitha>Gauthama</option>
+ <option value = Paurukuthsa Aangirasa- Paurukuthsa- Thraasathasya - Thrayarsheya- pravaranvitha>Paurukuthsa</option>
+ <option value = PaatharaayaNa Aangirasa- Paurukuthsa- Thraasathasya - Thrayarsheya- pravaranvitha>PaatharaayaNa</option>
+ <option value = Mauthgalya Aangirasa- Ambarisha- Mauthgalya - Thrayarsheya- pravaranvitha>Mauthgalya</option>
+ <option value = Bharatwaja Aangirasa- Bhaarhaspathya- Bharatwaja - Thrayarsheya- pravaranvitha>Bharatwaja</option>
+ <option value = Mauthgalya Aangirasa- Bhargyasva- Mauthgalya - Thrayarsheya- pravaranvitha>Mauthgalya</option>
+ <option value = Ratheethara Aangirasa- Vairoopa- Raatheethara - Thrayarsheya- pravaranvitha>Ratheethara</option>
+ <option value = Vishnuvruththa Aangirasa- Pauruguthsa- Thraasathasya - Thrayarsheya- pravaranvitha>Vishnuvruththa</option>
+ <option value = ShatamarshNa Aangirasa- Thraasathasya- Pauruguthsa - Thrayarsheya- pravaranvitha>ShatamarshNa</option>
+ <option value = Sankruthi Saathya- Saankruthya- Gauriveetha - Thrayarsheya- pravaranvitha>Sankruthi</option>
+ <option value = Sankruthi Aangirasa- Saaskruthya- Gauriveetha - Thrayarsheya- pravaranvitha>Sankruthi</option>
+ <option value = Haritha Aangirasa- Ambarisha- Yauvanaachva - Thrayarsheya- pravaranvitha>Haritha</option>
+ <option value = Aabasthamba Aangirasa- Bharhaspathya- Bharatwaja - Thrayarsheya- pravaranvitha>Aabasthamba</option>
+ <option value = Aayaasya Aangirassa- Aayaasya- Gauthama - Thrayarsheya- pravaranvitha>Aayaasya</option>
+ <option value = KaNva Aangirasa- Ajameeta- KaaNva - Thrayarsheya- pravaranvitha>KaNva</option>
+ <option value = KaNva Aangirasa- Aamaheeyava- Aurukshyasa - Thrayarsheya- pravaranvitha>KaNva</option>
+ <option value = Kabila Aangirasa- Aamaheeyava- Aurukshyasa - Thrayarsheya- pravaranvitha>Kabila</option>
+ <option value = Garga Aangirasa- Chainya- Gargaya (Garka) - Thrayarsheya- pravaranvitha>Garga</option>
+ <option value = Kuthsa Aangirasa- Ambareesha- Yauvanaachva - Thrayarsheya- pravaranvitha>Kuthsa</option>
+ <option value = Kuthsa Aangirasa- Maandathra- Kauthsa - Thrayarsheya- pravaranvitha>Kuthsa</option>
+ <option value = Kaundinya Aangirasa- Bharhaspathya- Bharatwaja - Thrayarsheya- pravaranvitha>Kaundinya</option>
+ <option value = Paurukuthsa Aangirasa- Paurukuthsa- Aasathasya - Thrayarsheya- pravaranvitha>Paurukuthsa</option>
+ <option value = Lohitha Aangirasa- Vaichvamitra- Lohitha - Thrayarsheya- pravaranvitha>Lohitha</option>
 </optgroup>
 
 <optgroup label="Aathri" >
-- <option value="Aathreya Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha">Aathreya Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha</option>
-- <option value=" Mauthgalya Aathreya- Aarsanaanasa- Baurvaathitha - Thrayarsheya- pravaranvitha"> Mauthgalya Aathreya- Aarsanaanasa- Baurvaathitha - Thrayarsheya- pravaranvitha</option>
-- <option value=" Athri Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha"> Athri Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha</option>
-- <option value=" Uthaalaka Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha"> Uthaalaka Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha</option>
-- <option value=" Muthkala Aathreya- Aarsanaanasa- Baurvaathitha - thrayarsheya- pravaranvitha"> Muthkala Aathreya- Aarsanaanasa- Baurvaathitha - thrayarsheya- pravaranvitha</option>
-- <option value=" Gauriveetha Aathreya- Aarsanaanasa- Baurvaathitha - thrayarsheya- pravaranvitha"> Gauriveetha Aathreya- Aarsanaanasa- Baurvaathitha - thrayarsheya- pravaranvitha</option>
-- <option value=" Dattathreya Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha"> Dattathreya Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha</option>
-- <option value=" Dhananjaya Aathreya- Aarsanaanasa- Kaavishtira - Thrayarsheya- pravaranvitha"> Dhananjaya Aathreya- Aarsanaanasa- Kaavishtira - Thrayarsheya- pravaranvitha</option>
-- <option value=" Dhaksha ( Dakshi) Aathreya- Kaavishtira- Bhaurvathitha - Thrayarsheya- pravaranvitha"> Dhaksha ( Dakshi) Aathreya- Kaavishtira- Bhaurvathitha - Thrayarsheya- pravaranvitha</option>
-- <option value=" Bhaaleya Aathreya- Vaamarathya- Bauthrika - Thrayarsheya- pravaranvitha"> Bhaaleya Aathreya- Vaamarathya- Bauthrika - Thrayarsheya- pravaranvitha</option>
-- <option value=" Pathanjala Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha"> Pathanjala Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha</option>
-- <option value=" Bheejaavaaba Aathreya- Aarsanaanasa- Aadhitha - Thrayarsheya- pravaranvitha"> Bheejaavaaba Aathreya- Aarsanaanasa- Aadhitha - Thrayarsheya- pravaranvitha</option>
-- <option value=" Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha"> Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha</option>
+ <option value =Aathreya Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha>Aathreya-</option>
+ <option value = Mauthgalya Aathreya- Aarsanaanasa- Baurvaathitha - Thrayarsheya- pravaranvitha>Mauthgalya</option>
+ <option value = Athri Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha>Athri</option>
+ <option value = Uthaalaka Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha>Uthaalaka</option>
+ <option value = Muthkala Aathreya- Aarsanaanasa- Baurvaathitha - thrayarsheya- pravaranvitha>Muthkala</option>
+ <option value = Gauriveetha Aathreya- Aarsanaanasa- Baurvaathitha - thrayarsheya- pravaranvitha>Gauriveetha</option>
+ <option value = Dattathreya Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha>Dattathreya</option>
+ <option value = Dhananjaya Aathreya- Aarsanaanasa- Kaavishtira - Thrayarsheya- pravaranvitha>Dhananjaya</option>
+ <option value = Dhaksha ( Dakshi) Aathreya- Kaavishtira- Bhaurvathitha - Thrayarsheya- pravaranvitha>Dhaksha</option>
+ <option value = Bhaaleya Aathreya- Vaamarathya- Bauthrika - Thrayarsheya- pravaranvitha>Bhaaleya</option>
+ <option value = Pathanjala Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha>Pathanjala</option>
+ <option value = Bheejaavaaba Aathreya- Aarsanaanasa- Aadhitha - Thrayarsheya- pravaranvitha>Bheejaavaaba</option>
+ <option value = Aathreya- Aarsanaanasa- syaavaachva - Thrayarsheya- pravaranvitha>Aathreya-</option>
 </optgroup>
 
 
 
 
 <optgroup label="Vishwamitra" >
-- <option value=" Kausika (Kusika) Vaiswamithra- AagamarshaNa- Kausika - Thrayarsheya"> Kausika (Kusika) Vaiswamithra- AagamarshaNa- Kausika - Thrayarsheya</option>
-- <option value=" Lohitha Vaiswamithra- Ashtaka- Lohitha - Thrayarsheya"> Lohitha Vaiswamithra- Ashtaka- Lohitha - Thrayarsheya</option>
-- <option value=" Viswamithra Vaiswamithra- Devaraatha- Authala - Thrayarsheya"> Viswamithra Vaiswamithra- Devaraatha- Authala - Thrayarsheya</option>
-- <option value=" Saalaavatha Vaiswamithra- Devaraatha- Authala - Thrayarsheya"> Saalaavatha Vaiswamithra- Devaraatha- Authala - Thrayarsheya</option>
-- <option value=" Kadhaka Vaiswamithra- Kadhaka - Dhwayarsheya"> Kadhaka Vaiswamithra- Kadhaka - Dhwayarsheya</option>
-- <option value=" AagamarshaNa Vaiswamithra- AagamarshaNa- Kausika - Thrayarsheya"> AagamarshaNa Vaiswamithra- AagamarshaNa- Kausika - Thrayarsheya</option>
-- <option value=" Gatha Vaiswamithra- Maaduchandasa- Aaja - Thrayarsheya"> Gatha Vaiswamithra- Maaduchandasa- Aaja - Thrayarsheya</option>
-- <option value=" Kaathyaayana Vaiswamithra- Kathya- Adgeetha - Thrayarsheya"> Kaathyaayana Vaiswamithra- Kathya- Adgeetha - Thrayarsheya</option>
-- <option value=" Kamakaayana Vaiswamithra- Devaseevarasa- DaivaTharasa (Rethasa) - Thrayarsheya"> Kamakaayana Vaiswamithra- Devaseevarasa- DaivaTharasa (Rethasa) - Thrayarsheya</option>
-- <option value=" Kaalava Vaiswamithra- Devaraatha- Audhala - Thrayarsheya"> Kaalava Vaiswamithra- Devaraatha- Audhala - Thrayarsheya</option>
-- <option value=" Kausika Vaiswamithra- Salangayana- Kausika - Thrayarsheya"> Kausika Vaiswamithra- Salangayana- Kausika - Thrayarsheya</option>
-- <option value=" Jabhala (Jabali) Vaiswamithra- Devaraatha- Audhala - Thrayarsheya"> Jabhala (Jabali) Vaiswamithra- Devaraatha- Audhala - Thrayarsheya</option>
-- <option value=" Devaraatha Vaiswamithra- Devaraatha- Aulitha - Thrayarsheya"> Devaraatha Vaiswamithra- Devaraatha- Aulitha - Thrayarsheya</option>
+<option value = Kausika (Kusika) Vaiswamithra- AagamarshaNa- Kausika - Thrayarsheya>Kausika</option>
+ <option value = Lohitha Vaiswamithra- Ashtaka- Lohitha - Thrayarsheya>Lohitha</option>
+ <option value = Viswamithra Vaiswamithra- Devaraatha- Authala - Thrayarsheya>Viswamithra</option>
+ <option value = Saalaavatha Vaiswamithra- Devaraatha- Authala - Thrayarsheya>Saalaavatha</option>
+ <option value = Kadhaka Vaiswamithra- Kadhaka - Dhwayarsheya>Kadhaka</option>
+ <option value = AagamarshaNa Vaiswamithra- AagamarshaNa- Kausika - Thrayarsheya>AagamarshaNa</option>
+ <option value = Gatha Vaiswamithra- Maaduchandasa- Aaja - Thrayarsheya>Gatha</option>
+ <option value = Kaathyaayana Vaiswamithra- Kathya- Adgeetha - Thrayarsheya>Kaathyaayana</option>
+ <option value = Kamakaayana Vaiswamithra- Devaseevarasa- DaivaTharasa (Rethasa) - Thrayarsheya>Kamakaayana</option>
+ <option value = Kaalava Vaiswamithra- Devaraatha- Audhala - Thrayarsheya>Kaalava</option>
+ <option value = Kausika Vaiswamithra- Salangayana- Kausika - Thrayarsheya>Kausika</option>
+ <option value = Jabhala (Jabali) Vaiswamithra- Devaraatha- Audhala - Thrayarsheya>Jabhala</option>
+ <option value = Devaraatha Vaiswamithra- Devaraatha- Aulitha - Thrayarsheya>Devaraatha</option>
 
 </optgroup>
 
 
 
 <optgroup label="Vashista" >
-- <option value=" Kaundinya Vaasishta- MaithravaruNa- Kaundinya - Thrayarsheya"> Kaundinya Vaasishta- MaithravaruNa- Kaundinya - Thrayarsheya</option>
-- <option value=" Parasara Vaasishta- saakthya- Paarasarya - Thrayarsheya"> Parasara Vaasishta- saakthya- Paarasarya - Thrayarsheya</option>
-- <option value=" Vaasishta Vaasishta- MaithravaruNa- Kaundinya - Thrayarsheya"> Vaasishta Vaasishta- MaithravaruNa- Kaundinya - Thrayarsheya</option>
-- <option value=" Vasishta Vaasishta - Ekarsheya"> Vasishta Vaasishta - Ekarsheya</option>
-- <option value=" Haritha Vaasishta - Ekarsheya"> Haritha Vaasishta - Ekarsheya</option>
-- <option value=" Aachvalaayana Vaasishta- Aindrapramatha- Aabarathvasasya - Thrayarsheya"> Aachvalaayana Vaasishta- Aindrapramatha- Aabarathvasasya - Thrayarsheya</option>
-- <option value=" Upamanyu Vaasishta- Aindrapramatha- Aabarathvasasya - Thrayarsheya"> Upamanyu Vaasishta- Aindrapramatha- Aabarathvasasya - Thrayarsheya</option>
-- <option value=" KaaNva Vaasishta- Aindrapramatha- Aabarathvasasya - Thrayarsheya"> KaaNva Vaasishta- Aindrapramatha- Aabarathvasasya - Thrayarsheya</option>
-- <option value=" JaadhookarNya Vaasishta- Aindrapramatha- Aabarathvasasya - Thrayarsheya"> JaadhookarNya Vaasishta- Aindrapramatha- Aabarathvasasya - Thrayarsheya</option>
-- <option value=" Bhodayana Vaasishta- Aathreya- JaadhookarNya - Thrayarsheya"> Bhodayana Vaasishta- Aathreya- JaadhookarNya - Thrayarsheya</option>
-- <option value=" MithraavaruNa Vaasishta- MaithravaruNa- Kaundinya - Thrayarsheya"> MithraavaruNa Vaasishta- MaithravaruNa- Kaundinya - Thrayarsheya</option>
-- <option value=" Mauthgala Vaasishta- MaithravaruNa- Kaundinya - Thrayarsheya"> Mauthgala Vaasishta- MaithravaruNa- Kaundinya - Thrayarsheya</option>
-- <option value=" Vaasida Vaasishta- Aindrapramatha- Aaabarathvasasya - Thrayarsheya"> Vaasida Vaasishta- Aindrapramatha- Aaabarathvasasya - Thrayarsheya</option>
+<option value = Kaundinya Vaasishta- MaithravaruNa- Kaundinya - Thrayarsheya>Kaundinya</option>
+ <option value = Parasara Vaasishta- saakthya- Paarasarya - Thrayarsheya>Parasara</option>
+ <option value = Vaasishta Vaasishta- MaithravaruNa- Kaundinya - Thrayarsheya>Vaasishta</option>
+ <option value = Vasishta Vaasishta - Ekarsheya>Vasishta</option>
+ <option value = Haritha Vaasishta - Ekarsheya>Haritha</option>
+ <option value = Aachvalaayana Vaasishta- Aindrapramatha- Aabarathvasasya - Thrayarsheya>Aachvalaayana</option>
+ <option value = Upamanyu Vaasishta- Aindrapramatha- Aabarathvasasya - Thrayarsheya>Upamanyu</option>
+ <option value = KaaNva Vaasishta- Aindrapramatha- Aabarathvasasya - Thrayarsheya>KaaNva</option>
+ <option value = JaadhookarNya Vaasishta- Aindrapramatha- Aabarathvasasya - Thrayarsheya>JaadhookarNya</option>
+ <option value = Bhodayana Vaasishta- Aathreya- JaadhookarNya - Thrayarsheya>Bhodayana</option>
+ <option value = MithraavaruNa Vaasishta- MaithravaruNa- Kaundinya - Thrayarsheya>MithraavaruNa</option>
+ <option value = Mauthgala Vaasishta- MaithravaruNa- Kaundinya - Thrayarsheya>Mauthgala</option>
+ <option value = Vaasida Vaasishta- Aindrapramatha- Aaabarathvasasya - Thrayarsheya>Vaasida</option>
 
 </optgroup>
 
@@ -1078,20 +1080,20 @@ option{
 
 
 <optgroup label="Kachyapa/Kasyapa" >
-- <option value=" Naithruva Kasyapa Kaasyapa- Aavathsaara- Naithruva - Thrayarsheya"> Naithruva Kasyapa Kaasyapa- Aavathsaara- Naithruva - Thrayarsheya</option>
-- <option value=" Reba Kasyapa Kaasyapa- Aavathsaara- Rebaa - Thrayarsheya"> Reba Kasyapa Kaasyapa- Aavathsaara- Rebaa - Thrayarsheya</option>
-- <option value=" Saandilya Kaasyapa- Aavathsaara- Saandilya - Thrayarsheya"> Saandilya Kaasyapa- Aavathsaara- Saandilya - Thrayarsheya</option>
-- <option value=" Saandilya Kasyapa- Daivala- Asitha - Thrayarsheya"> Saandilya Kasyapa- Daivala- Asitha - Thrayarsheya</option>
-- <option value=" Saandilya Kaasyapa- Aavathsaara- Naithruva- Reba- Raiba- Sandila- Chandilya - Sapthaarsheya"> Saandilya Kaasyapa- Aavathsaara- Naithruva- Reba- Raiba- Sandila- Chandilya - Sapthaarsheya</option>
-- <option value=" Kaasyapa Kaasyapa- Aasitha- Daivala - Thrayarsheya"> Kaasyapa Kaasyapa- Aasitha- Daivala - Thrayarsheya</option>
-- <option value=" Kachyapa Kaasyapa- Aavathsaara- Naithruva- Reba- Raiba- Sandila- Chandilya - Sapthaarsheya"> Kachyapa Kaasyapa- Aavathsaara- Naithruva- Reba- Raiba- Sandila- Chandilya - Sapthaarsheya</option>
-- <option value=" Bruku Kaasyapa- Aavathsaara- Naithrava - Thrayarsheya"> Bruku Kaasyapa- Aavathsaara- Naithrava - Thrayarsheya</option>
-- <option value=" Maareesa Kaasyapa- Aavathsaara- Naithrava - Thrayarsheya"> Maareesa Kaasyapa- Aavathsaara- Naithrava - Thrayarsheya</option>
-- <option value=" Raibya (Reba) Kaasyapa- Aavathsaara- Raibya - Thrayarsheya"> Raibya (Reba) Kaasyapa- Aavathsaara- Raibya - Thrayarsheya</option>
-- <option value=" Baukakshi Kaasyapa- Aavathsaara- Aasitha - Thrayarsheya"> Baukakshi Kaasyapa- Aavathsaara- Aasitha - Thrayarsheya</option>
-- <option value=" Vaathsya Kaasyapa- Aavathsaara- Raibya - Thrayarsheya"> Vaathsya Kaasyapa- Aavathsaara- Raibya - Thrayarsheya</option>
-- <option value=" Kaasyapa- Aavathsaara- Aasitha - Thrayarsheya"> Kaasyapa- Aavathsaara- Aasitha - Thrayarsheya</option>
-- 
+ <option value = Naithruva Kasyapa Kaasyapa- Aavathsaara- Naithruva - Thrayarsheya>Naithruva</option>
+ <option value = Reba Kasyapa Kaasyapa- Aavathsaara- Rebaa - Thrayarsheya>Reba</option>
+ <option value = Saandilya Kaasyapa- Aavathsaara- Saandilya - Thrayarsheya>Saandilya</option>
+ <option value = Saandilya Kasyapa- Daivala- Asitha - Thrayarsheya>Saandilya</option>
+ <option value = Saandilya Kaasyapa- Aavathsaara- Naithruva- Reba- Raiba- Sandila- Chandilya - Sapthaarsheya>Saandilya</option>
+ <option value = Kaasyapa Kaasyapa- Aasitha- Daivala - Thrayarsheya>Kaasyapa</option>
+ <option value = Kachyapa Kaasyapa- Aavathsaara- Naithruva- Reba- Raiba- Sandila- Chandilya - Sapthaarsheya>Kachyapa</option>
+ <option value = Bruku Kaasyapa- Aavathsaara- Naithrava - Thrayarsheya>Bruku</option>
+ <option value = Maareesa Kaasyapa- Aavathsaara- Naithrava - Thrayarsheya>Maareesa</option>
+ <option value = Raibya (Reba) Kaasyapa- Aavathsaara- Raibya - Thrayarsheya>Raibya</option>
+ <option value = Baukakshi Kaasyapa- Aavathsaara- Aasitha - Thrayarsheya>Baukakshi</option>
+ <option value = Vaathsya Kaasyapa- Aavathsaara- Raibya - Thrayarsheya>Vaathsya</option>
+ <option value = Kaasyapa- Aavathsaara- Aasitha - Thrayarsheya>Kaasyapa-</option>
+
 </optgroup>
 
 
@@ -1099,13 +1101,13 @@ option{
 
 <optgroup label="Agasthya " >
 
-<option value="Agasthya Agasthya - Ekarisheya- pravaranvitha">Agasthya Agasthya - Ekarisheya- pravaranvitha</option>
-- <option value=" Idhmavaaha Agasthya - Ekarisheya- Pravaranvitha"> Idhmavaaha Agasthya - Ekarisheya- Pravaranvitha</option>
-- <option value=" Aagasthi Agasthya- Maahendra- Maayobhuva - Thryarisheya- pravaranvitha"> Aagasthi Agasthya- Maahendra- Maayobhuva - Thryarisheya- pravaranvitha</option>
-- <option value=" Agasthi Agasthya- Dhradyavrutha- Aidhmavaaha - Thrayarisheya- pravaranvitha"> Agasthi Agasthya- Dhradyavrutha- Aidhmavaaha - Thrayarisheya- pravaranvitha</option>
-- <option value=" Idhmavaaha Agasthya- Vaathyasva- Aidhmavaaha - thrayarisheya- pravaranvitha"> Idhmavaaha Agasthya- Vaathyasva- Aidhmavaaha - thrayarisheya- pravaranvitha</option>
-- <option value=" Pulaha Agasthya- Maahendra- Maayobhuva - Thrayarisheya- pravaranvitha"> Pulaha Agasthya- Maahendra- Maayobhuva - Thrayarisheya- pravaranvitha</option>
-- <option value=" Maayobhuva Agasthya- Maahendra- Maayobhuva - Thrayarisheya- pravaranvitha"> Maayobhuva Agasthya- Maahendra- Maayobhuva - Thrayarisheya- pravaranvitha</option>
+ <option value =Agasthya Agasthya - Ekarisheya- pravaranvitha>Agasthya</option>
+ <option value = Idhmavaaha Agasthya - Ekarisheya- Pravaranvitha>Idhmavaaha</option>
+ <option value = Aagasthi Agasthya- Maahendra- Maayobhuva - Thryarisheya- pravaranvitha>Aagasthi</option>
+ <option value = Agasthi Agasthya- Dhradyavrutha- Aidhmavaaha - Thrayarisheya- pravaranvitha>Agasthi</option>
+ <option value = Idhmavaaha Agasthya- Vaathyasva- Aidhmavaaha - thrayarisheya- pravaranvitha>Idhmavaaha</option>
+ <option value = Pulaha Agasthya- Maahendra- Maayobhuva - Thrayarisheya- pravaranvitha>Pulaha</option>
+ <option value = Maayobhuva Agasthya- Maahendra- Maayobhuva - Thrayarisheya- pravaranvitha>Maayobhuva</option>
       </optgroup>
       </select>
     </div>
