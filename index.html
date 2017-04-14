@@ -598,7 +598,7 @@ option{
       </p> 
 <div class="col-sm-12 col-xs-12">
    
-<div class="col-xs-12 col-sm-7 col-md-7" style="float:none;margin:0 auto;">
+<div class="col-xs-10 col-sm-7 col-md-7" style="float:none;margin:0 auto;">
 	<div class="col-sm-12 col-xs-12"style="border-left: 1px solid maroon;border-right: 1px solid maroon;border-bottom: 1px solid maroon;">
   
       <div class="row">
@@ -1118,17 +1118,36 @@ option{
   <div class="form-group">
   <label class="control-label col-sm-3"> Select Your Soothram: <sub>*</sub></label>
   <div class="col-sm-4">
-    <select id="soothram" class="form-control" required data-error="Please select a soothram">
-    <option value="">Select a Soothram</option>
-    <option value="Aapasthamba-Yajur">Aapasthamba-Yajur </option>
-    <option value="Bodayana-Yajur">Bodayana-Yajur</option>
-    <option value="Asvalayana-Rig">Asvalayana-Rig</option>
-    <option value="Dhrahyayana-Samam">Dhrahyayana-Samam</option>  
-    </select>
+  	<select id="soothram" class="form-control" required data-error="Please select a soothram">
+  	<option value="">Select a Soothram</option>
+  	<option value="Aapasthamba-Yajur">Aapasthamba-Yajur </option>
+  	<option value="Bodayana-Yajur">Bodayana-Yajur</option>
+  	<option value="Asvalayana-Rig">Asvalayana-Rig</option>
+  	<option value="Dhrahyayana-Samam">Dhrahyayana-Samam</option>	
+  	</select>
   </div>
   <div class="help-block with-errors" ></div>
   </div>
+
+
+     <div class="form-group">
+    <label class="control-label col-sm-3">Kuladeivam Koil:<sub>*</sub></label>
+     <div class="col-sm-4">
+      <input type="text" class="form-control" id="kulaDeivam" placeholder="Enter Kuladeivam Koil"  pattern="[A-Za-z.,() ]{1,1000}" data-error="Please enter a valid Koil Name" required >
+    </div>
+     <div class="help-block with-errors" ></div>  
+  </div>
+
+     <div class="form-group">
+    <label class="control-label col-sm-3">Poorvigam(Native Village/Town/City):<sub>*</sub></label>
+     <div class="col-sm-4">
+      <input type="text" class="form-control" id="native" placeholder="Enter Poorvigam/ Native Place"   pattern="[A-Za-z.,() ]{1,1000}" data-error="Please enter a Native Place " required >
+    </div>
+     <div class="help-block with-errors" ></div>  
+  </div>
+
 </fieldset>
+ 
   <div class="form-group btnHolder"> 
     <div class="col-md-offset-4 col-sm-offset-4 col-sm-2 col-md-2 col-xs-4 col-xs-offset-2">
       <input type="submit" class="btn btn-primary form-control" id="submitBtn" value="Submit">
